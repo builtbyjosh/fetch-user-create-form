@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  Button,
-  Form,
-  Col,
-  Row,
-  Container,
-  Card,
-  Image,
-} from 'react-bootstrap';
+import { Button, Form, Col, Row, Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -54,7 +46,7 @@ const SignupForm = () => {
     backgroundImage: `url(${dogImage})`,
     backgroundSize: 'cover',
     height: '100vh',
-    backgroundPosition: 'center'
+    backgroundPosition: 'center',
   };
 
   return (
@@ -66,8 +58,7 @@ const SignupForm = () => {
               md="6"
               className="d-none d-md-block "
               style={backgroundImageStyles}
-            >
-            </Col>
+            ></Col>
 
             <Col md="6" className="px-md-3 px-sm-1 ">
               <h2 className="fw-bold mb-4 text-center">Sign Up</h2>

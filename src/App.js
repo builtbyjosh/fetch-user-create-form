@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import SignupForm from './components/SignupForm';
+import SignupPage from './Pages/SignupPage'
 import Homepage from './Pages/Homepage';
 import UserCreatedPage from './Pages/UserCreatedPage';
 
@@ -8,7 +8,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path='/signup' element={<SignupForm/>}/>
+        <Route path='/signup' element={<SignupPage/>}/>
         <Route path='/success' element={<UserCreatedPage />} />
       </Routes>
     </>
